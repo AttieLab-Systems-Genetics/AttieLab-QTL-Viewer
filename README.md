@@ -8,9 +8,10 @@ cis/trans plots, peak exploration with founder allele effects, sex- and
 diet-stratified comparisons, trait search, correlation, profile plots,
 mediation analysis, and SNP association.
 
-> **Live application**: *deployed URL forthcoming — this section will be
-> updated once the long-term hosting URL is confirmed.* In the meantime,
-> the canonical reference for the software is this repository.
+> **Live application**: <https://connect.doit.wisc.edu/content/08a89532-32d3-4b0b-bff3-a16f3a05c926>
+>
+> Hosted on UW–Madison's Posit Connect (Research Computing Initiative). The
+> source for the deployed version is this repository.
 
 ---
 
