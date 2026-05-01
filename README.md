@@ -20,8 +20,8 @@ mediation analysis, and SNP association.
 If you use AttieLab-QTL-Viewer in your work, please cite both the software
 archive and the manuscript that describes it:
 
-- **Software archive (Zenodo)**: *DOI to be added once the first GitHub
-  release is published; this README will be updated at that point.*
+- **Software archive (Zenodo)**: <https://doi.org/10.5281/zenodo.19961001>
+  (concept DOI — always resolves to the latest version)
 - **Manuscript**: *citation to be added.*
 
 A machine-readable citation is available in [`CITATION.cff`](CITATION.cff).

@@ -7,9 +7,8 @@ date-released: "2026-05-01"
 license: MIT
 url: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
 repository-code: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
-# After the first GitHub release triggers Zenodo, replace the placeholder
-# below with the Zenodo concept DOI (10.5281/zenodo.XXXXXXX).
-doi: "10.5281/zenodo.XXXXXXX"
+# Concept DOI (always resolves to the latest version).
+doi: "10.5281/zenodo.19961001"
 authors:
   - family-names: "Opara"
     given-names: "Charles"
