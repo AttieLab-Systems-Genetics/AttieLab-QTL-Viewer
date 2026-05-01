@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use AttieLab-QTL-Viewer in your work, please cite it as below."
+title: "AttieLab-QTL-Viewer: Interactive Shiny App for Diversity Outbred Mouse QTL Analysis"
+type: software
+version: 0.1.0
+date-released: "2026-05-01"
+license: MIT
+url: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
+repository-code: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
+# After the first GitHub release triggers Zenodo, replace the placeholder
+# below with the Zenodo concept DOI (10.5281/zenodo.XXXXXXX).
+doi: "10.5281/zenodo.XXXXXXX"
+authors:
+  - family-names: "Opara"
+    given-names: "Charles"
+    email: "copara@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: "Yandell"
+    given-names: "Brian S"
+    email: "brian.yandell@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: "Emfinger"
+    given-names: "Chris"
+    email: "emfinger@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: "Willis"
+    given-names: "Kalynn"
+    email: "khwillis@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: "Mitok"
+    given-names: "Kelly"
+    email: "mitok@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+keywords:
+  - QTL
+  - quantitative trait loci
+  - Diversity Outbred mice
+  - systems genetics
+  - Shiny
+  - genomics
+  - LOD scan
+abstract: >-
+  AttieLab-QTL-Viewer is a modular R/Shiny web application for exploring
+  quantitative trait loci in Diversity Outbred mouse data. It supports
+  genome-wide LOD scans, Manhattan and cis/trans plots, peak exploration
+  with founder allele effects, sex- and diet-stratified comparisons,
+  trait search, correlation, profile plots, mediation analysis, and SNP
+  association. The app is designed for deployment on Posit Connect or any
+  Docker host with S3-compatible object storage.

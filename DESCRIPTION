@@ -1,0 +1,33 @@
+Package: qtlApp
+Version: 0.1.0
+Date: 2026-05-01
+Title: AttieLab QTL Viewer — Interactive Shiny App for Diversity Outbred Mouse QTL Analysis
+Description: A modular R/Shiny web application for exploring quantitative trait
+    loci (QTL) in Diversity Outbred mouse data. Provides genome-wide LOD scans,
+    Manhattan and cis/trans plots, peak exploration with founder allele
+    effects, sex- and diet-stratified comparisons with on-the-fly difference
+    plots, trait search across large genomic datasets, correlation, profile
+    plots, mediation analysis, and SNP association. Designed for deployment on
+    Posit Connect or a Docker host with optional S3-backed data storage.
+Authors@R: c(
+    person("Charles", "Opara", role = c("aut", "cre"),
+           email = "copara@wisc.edu"),
+    person("Brian S", "Yandell", role = "aut",
+           email = "brian.yandell@wisc.edu"),
+    person("Chris", "Emfinger", role = "aut",
+           email = "emfinger@wisc.edu"),
+    person("Kalynn", "Willis", role = "aut",
+           email = "khwillis@wisc.edu"),
+    person("Kelly", "Mitok", role = "aut",
+           email = "mitok@wisc.edu"))
+URL: https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer
+BugReports: https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.2.0)
+Imports:
+    bslib, data.table, dplyr, DT, fst, ggplot2, grDevices, reshape2, shiny,
+    shinycssloaders, shinyjs, stringr, utils,
+    paws.storage, filelock, future, future.apply, promises

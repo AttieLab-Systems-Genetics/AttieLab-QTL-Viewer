@@ -1,0 +1,57 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local-only dev/notes files (kept out of the public repo)
+CLAUDE.md
+APP_STRUCTURE.txt
+CHANGELOG.html
+
+# Caches
+qtlapp_cache/
+.qtlapp_cache/
+qtl_viewer_cache/
+*_cache/
+
+# Data and large generated artifacts
+data/
+correlations/
+cross_DO1200_grcm39.rds
+
+# R / RStudio
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Ruserdata
+.Renviron
+.Rproj.user/
+*.Rproj
+man/
+
+# Build artifacts
+*-Ex.R
+/*.tar.gz
+/*.Rcheck/
+*.html
+
+# Vignettes (generated)
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth
+.httr-oauth
+
+# rsconnect deployment metadata (per-user)
+rsconnect/
+
+# Backup / temp files
+*.bak
+*.tmp
+*.utf8.md
+*.knit.md
+
+# OS
+.DS_Store
+.cursorrules
