@@ -30,4 +30,5 @@ Depends:
 Imports:
     bslib, data.table, dplyr, DT, fst, ggplot2, grDevices, reshape2, shiny,
     shinycssloaders, shinyjs, stringr, utils,
-    paws.storage, filelock, future, future.apply, promises
+    paws.storage, filelock, future, future.apply, promises,
+    htmltools, htmlwidgets, plotly, readxl, rlang, tidyr
