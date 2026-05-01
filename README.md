@@ -116,6 +116,8 @@ participating in this project you agree to abide by the
 - **Chris Emfinger** — University of Wisconsin–Madison
 - **Kalynn Willis** — University of Wisconsin–Madison
 - **Kelly Mitok** — University of Wisconsin–Madison
+- **Mark P Keller** — University of Wisconsin–Madison
+- **Alan Attie** — University of Wisconsin–Madison
 
 ## Acknowledgments
 

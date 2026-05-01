@@ -30,6 +30,14 @@ authors:
     given-names: "Kelly"
     email: "mitok@wisc.edu"
     affiliation: "University of Wisconsin–Madison"
+  - family-names: "Keller"
+    given-names: "Mark P"
+    email: "mark.keller@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
+  - family-names: "Attie"
+    given-names: "Alan"
+    email: "adattie@wisc.edu"
+    affiliation: "University of Wisconsin–Madison"
 keywords:
   - QTL
   - quantitative trait loci

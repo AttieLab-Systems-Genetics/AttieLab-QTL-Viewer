@@ -19,7 +19,11 @@ Authors@R: c(
     person("Kalynn", "Willis", role = "aut",
            email = "khwillis@wisc.edu"),
     person("Kelly", "Mitok", role = "aut",
-           email = "mitok@wisc.edu"))
+           email = "mitok@wisc.edu"),
+    person("Mark P", "Keller", role = "aut",
+           email = "mark.keller@wisc.edu"),
+    person("Alan", "Attie", role = "aut",
+           email = "adattie@wisc.edu"))
 URL: https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer
 BugReports: https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer/issues
 License: MIT + file LICENSE
