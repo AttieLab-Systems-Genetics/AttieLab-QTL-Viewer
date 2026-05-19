@@ -1,0 +1,12 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^\.gitignore$
+^\.lintr$
+^README\.md$
+^CONTRIBUTING\.md$
+^CODE_OF_CONDUCT\.md$
+^SECURITY\.md$
+^CITATION\.cff$
+^install_packages\.R$
+^.*\.bak$
