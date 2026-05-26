@@ -1,6 +1,6 @@
 Package: qtlApp
-Version: 0.1.0
-Date: 2026-05-01
+Version: 0.2.0
+Date: 2026-05-19
 Title: AttieLab QTL Viewer — Interactive Shiny App for Diversity Outbred Mouse QTL Analysis
 Description: A modular R/Shiny web application for exploring quantitative trait
     loci (QTL) in Diversity Outbred mouse data. Provides genome-wide LOD scans,

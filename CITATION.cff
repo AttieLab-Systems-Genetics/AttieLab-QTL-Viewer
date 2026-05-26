@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use AttieLab-QTL-Viewer in your work, please cite it as below."
 title: "AttieLab-QTL-Viewer: Interactive Shiny App for Diversity Outbred Mouse QTL Analysis"
 type: software
-version: 0.1.0
-date-released: "2026-05-01"
+version: 0.2.0
+date-released: "2026-05-19"
 license: MIT
 url: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
 repository-code: "https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer"
