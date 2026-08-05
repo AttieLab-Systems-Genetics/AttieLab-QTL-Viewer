@@ -38,23 +38,17 @@ The codebase follows a modular design pattern. Functional areas (such as scan pl
 
 All data access in `qtlApp` is decoupled from direct file paths or S3 API calls. Downstream modules call `local_path("relative/key")` from [`R/data_source.R`](R/data_source.R).
 
+```mermaid
+flowchart TD
+    App["Shiny Application<br/>(Modules request data key)"] --> LP["local_path('relative/key')"]
+    LP --> BackendChoice{QTLAPP_DATA_BACKEND}
+    BackendChoice -->|local| LocalBackend["Local Backend<br/>Returns path on local disk"]
+    BackendChoice -->|s3| S3Backend["S3 Backend<br/>Checks local cache index"]
+    S3Backend --> Validate["Validate ETag / TTL"]
+    Validate --> Fetch["Download if missing or stale"]
+    Fetch --> CachedPath["Return cached file path"]
 ```
-+-------------------------------------------------------------+
-|                      Shiny Application                      |
-|              (Modules request data key)                     |
-+-------------------------------------------------------------+
-                              |
-                              v
-                local_path("relative/key")
-                              |
-       +----------------------+----------------------+
-       |                                             |
-       v                                             v
- [ local backend ]                             [ s3 backend ]
- Returns path on local disk               Checks local cache index
-                                          Validates ETag / TTL
-                                          Downloads if missing/stale
-```
+
 
 ### Storage Backends
 
