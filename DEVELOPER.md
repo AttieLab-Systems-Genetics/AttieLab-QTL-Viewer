@@ -43,9 +43,9 @@ flowchart LR
     App["Shiny Application"] -->|"local_path('relative/key')"| Choice{QTLAPP_DATA_BACKEND}
     Choice -->|local| Local["Local Backend<br/>Returns path on local disk"]
     Choice -->|s3| S3["S3 Backend<br/>Validates ETag/TTL cache & returns path"]
+    S3 ~~~ Spacer["&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+    style Spacer fill:none,stroke:none;
 ```
-
-
 
 
 ### Storage Backends
@@ -92,6 +92,7 @@ Configuration is parsed at startup by [`R/config.R`](R/config.R) and cached in a
 ### Prerequisites & Setup
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/AttieLab-Systems-Genetics/AttieLab-QTL-Viewer.git
    cd AttieLab-QTL-Viewer
@@ -99,18 +100,21 @@ Configuration is parsed at startup by [`R/config.R`](R/config.R) and cached in a
 
 2. **Install R dependencies:**
    Execute [`install_packages.R`](install_packages.R) to install required CRAN and Bioconductor packages:
+
    ```bash
    Rscript install_packages.R
    ```
 
 3. **Configure environment variables:**
    For local development against a local data root:
+
    ```bash
    export QTLAPP_DATA_BACKEND=local
    export QTLAPP_DATA_ROOT=/path/to/your/local/data
    ```
 
    For testing against an S3 bucket:
+
    ```bash
    export QTLAPP_DATA_BACKEND=s3
    export QTLAPP_S3_BUCKET=your-qtl-bucket
@@ -119,6 +123,7 @@ Configuration is parsed at startup by [`R/config.R`](R/config.R) and cached in a
    ```
 
 4. **Launch the application:**
+
    ```bash
    R -e 'shiny::runApp("app.R", port = 3838)'
    ```
@@ -130,9 +135,11 @@ Configuration is parsed at startup by [`R/config.R`](R/config.R) and cached in a
 To prevent UI blocking during compute-intensive calculations (such as LOD scan rendering and correlation matrix calculation), `qtlApp` leverages `future` and `promises`:
 
 - **Worker Pool Initialization:** [`app.R`](app.R) configures background workers using:
+
   ```r
   future::plan(future::multisession, workers = .qtl_workers)
   ```
+
 - **Async Promises:** Heavy calculation routines wrap work in `future::future({...}) %...>%` blocks to yield control back to the Shiny event loop.
 - **Cache Pre-warming:** On startup, [`R/prewarm.R`](R/prewarm.R) asynchronously loads core annotations and high-frequency data files into memory/cache if `QTLAPP_PREWARM=true`.
 
@@ -188,9 +195,11 @@ rcmdcheck::rcmdcheck(args = c("--no-manual", "--no-tests"))
 `qtlApp` is optimized for deployment on Posit Connect. Connect reads configuration from the **Vars** environment tab.
 
 1. Ensure [`manifest.json`](manifest.json) is updated if package dependencies change:
+
    ```r
    rsconnect::writeManifest()
    ```
+
 2. Deploy via `rsconnect::deployApp()` or Posit Connect Git integration.
 
 ### Docker Host Deployment
