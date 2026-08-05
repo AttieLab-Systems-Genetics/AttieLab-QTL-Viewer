@@ -42,9 +42,9 @@ All data access in `qtlApp` is decoupled from direct file paths or S3 API calls.
 flowchart LR
     App["Shiny Application"] -->|"local_path('relative/key')"| Choice{QTLAPP_DATA_BACKEND}
     Choice -->|local| Local["Local Backend<br/>Returns path on local disk"]
-    Choice -->|s3| S3["S3 Backend<br/>Check cache index & validate ETag/TTL"]
-    S3 --> Fetch["Download if missing/stale"] --> Path["Return cached file path"]
+    Choice -->|s3| S3["S3 Backend<br/>Validates ETag/TTL cache & returns path"]
 ```
+
 
 
 
